@@ -11,8 +11,8 @@ public aspect Logger {
 
     File file = new File("src/log.txt");
     Calendar cal = Calendar.getInstance();
-    Date date = Calendar.getInstance().getTime();  
-    DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+    Date date = cal.getTime();  
+    DateFormat dateFormat = new SimpleDateFormat("hh:mm:ss");  
     String strDate = dateFormat.format(date);
     
     
