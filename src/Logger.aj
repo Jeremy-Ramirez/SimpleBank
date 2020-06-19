@@ -1,4 +1,9 @@
-public aspect Log {
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Calendar;
+
+public aspect Logger {
 
     File file = new File("log.txt");
     Calendar cal = Calendar.getInstance();
